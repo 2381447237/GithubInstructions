@@ -1,0 +1,54 @@
+上传本地代码到github：
+
+1：建立git仓库 
+
+cd到你的本地项目根目录下，执行git命令
+
+git init
+
+2：将项目的所有文件添加到仓库中
+
+git add .
+
+3：将add的文件commit到仓库
+
+git commit -m "注释语句"
+
+4：去github上创建自己的Repository
+
+5：重点来了，将本地的仓库关联到github上
+
+git remote add origin https....(第4步Repository的网址)
+
+6：上传github之前，要先pull一下，执行如下命令：
+
+git pull --rebase origin master
+
+注意：如果第六步出现fatal: Couldn't find remote ref master，那么
+则需要重新输入$ git remote add origin git@github.com:djqiang/gitdemo.git
+
+7：也就是最后一步，上传代码到github远程仓库
+
+git push -u origin master
+
+相关参考:http://blog.csdn.net/hanhailong726188/article/details/46738929
+
+http://blog.csdn.net/dengjianqiang2011/article/details/9260435
+
+提交代码到github上
+
+1：cd到你的本地项目根目录下，执行git命令
+
+git pull origin master
+
+2：git add .
+
+3：git commit -m "注释语句"
+
+4：git pull origin master
+
+5：git push origin master
+
+从别人的github下载代码的命令
+
+git clone git@github.com:Esioner/ZBETuch_new-phone-.git
